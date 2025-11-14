@@ -1,0 +1,326 @@
+/*Costumization*/
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    overflow-x: clip;
+    font-family: afacad;
+    background-color: rgba(2, 56, 110, 1);
+}
+
+@font-face {
+    font-family: afacad;
+    src: url(./web/files/font/Afacad-VariableFont_wght.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+.up {
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    cursor: default;
+}
+
+.up:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/*Header*/
+.header {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.50);
+    background-color: rgba(0, 20, 40, 1);
+    backdrop-filter: blur(8px);
+    will-change: transform;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 0.5rem;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.fqzxlogo {
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.fqzx {
+    color: rgba(255, 244, 228, 1);
+    font-size: 2.1rem;
+}
+
+.header li {
+    float: left;
+    list-style: none;
+}
+
+.header a {
+    text-decoration: none;
+    list-style: none;
+    color: rgba(255, 244, 228, 1);
+    font-size: 1rem;
+    margin-right: 1rem
+}
+
+li a:hover {
+    color: grey;
+    transition: color 0.3s;
+}
+
+
+/*Main*/
+.landing {
+    color: rgba(2, 56, 110, 1);
+    background-color: rgba(255, 244, 228, 1);
+    padding-left: 10rem;
+    padding-bottom: 8rem;
+    height: fit-content;
+}
+
+.hello {
+    font-size: 10rem;
+    padding-top: 10rem;
+}
+
+.subject {
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+}
+
+.mywork {
+    font-size: 1.5rem;
+    color: rgba(2, 56, 110, 1);
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    cursor: default;
+}
+
+.mywork:hover {
+    color: grey;
+    transition: 0.3s;
+    transform: translateY(-5px);
+    transition: color 0.3s transform 0.3s ease-in-out;
+}
+
+/*Web Portpholio Button*/
+.button {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-left: 2rem;
+    padding: 15px 20px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: rgba(255, 244, 228, 1);
+    z-index: 1;
+}
+
+.button::after,
+.button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+}
+
+.button::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 56, 110, 1);
+    border-radius: 10px;
+}
+
+.button::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+
+.button:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+}
+
+.button:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.button:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+}
+
+.icon {
+    position: absolute;
+    height: 80px;
+    z-index: 98;
+    background-color: rgba(2, 56, 110, 1);
+    padding: 1rem;
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#icon-one {
+    top: 17rem;
+    left: 50rem;
+    transform: scale(1.1) rotate(-7deg);
+}
+
+#icon-two {
+    top: 19rem;
+    left: 60rem;
+    transform: scale(1.1) rotate(9deg);
+}
+
+#icon-three {
+    top: 27rem;
+    left: 53rem;
+    transform: scale(1.1) rotate(11deg);
+}
+
+#icon-one:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.3) rotate(0deg) translateY(-10px);
+}
+
+#icon-two:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.3) rotate(0deg) translateY(-10px);
+}
+
+#icon-three:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.3) rotate(0deg) translateY(-10px);
+}
+
+
+
+
+/*About Page*/
+
+#about {
+    scroll-margin: 8.8rem;
+}
+
+.aboutpage {
+    background-color: rgba(2, 56, 110, 1);
+    color: rgba(255, 244, 228, 1);
+    font-size: 1.5rem;
+    padding-left: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+}
+
+.aboutflex {
+    display: flex;
+    margin-top: 8rem;
+    width: 70vw;
+    gap: 2rem;
+}
+
+.abouttext {
+    font-size: 1rem;
+}
+
+.myphoto {
+    height: 200px;
+    clip-path: circle(39%);
+    transform: scale(1.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skills {
+    margin-top: 3rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 40rem;
+    margin-top: 1rem;
+}
+
+.boxskills {
+    background-color: rgba(255, 244, 228, 1);
+    width: fit-content;
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+
+.boxskills:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.point {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: rgba(2, 56, 110, 1);
+}
+
+
+/*Project Page*/
+
+#projects {
+    background-color: rgba(255, 244, 228, 1);
+}
+
+.project {
+    text-align: center;
+    padding-top: 8rem;
+    font-size: 2rem;
+    color: rgba(2, 56, 110, 1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    max-width: 15rem;
+    color: rgba(255, 244, 228, 1);
+    background-color: rgba(2, 56, 110, 1);
+}
+
+.pic {
+    height: 150px;
+}

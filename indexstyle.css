@@ -15,6 +15,8 @@ html {
     background-color: rgba(2, 56, 110, 1);
 }
 
+
+
 @font-face {
     font-family: afacad;
     src: url(./web/files/font/Afacad-VariableFont_wght.ttf);
@@ -34,6 +36,174 @@ a {
     transform: translateY(-5px);
     transition: transform 0.3s ease-in-out;
 }
+
+html,
+body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/*Anim On Scroll
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in,
+.slide-up,
+.scale-in,
+.container,
+.boxskills,
+.landingelement h1,
+.aboutelement h3,
+.aboutflex,
+.flexbox {
+    opacity: 0;
+    will-change: opacity, transform;
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.slide-up {
+    transform: translateY(30px);
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+.scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+}
+
+
+.fade-in.visible {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.slide-up.visible {
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+.scale-in.visible {
+    animation: scaleIn 0.6s ease-out forwards;
+}
+
+.container.visible {
+    animation: scaleIn 0.6s ease-out forwards;
+}
+
+.boxskills.visible {
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+.landingelement h1.visible {
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+.aboutelement h3.visible {
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+.aboutflex.visible {
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+.flexbox.visible {
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+.container:nth-child(1).visible {
+    animation: scaleIn 0.6s ease-out 0s forwards;
+}
+
+.container:nth-child(2).visible {
+    animation: scaleIn 0.6s ease-out 0.1s forwards;
+}
+
+.container:nth-child(3).visible {
+    animation: scaleIn 0.6s ease-out 0.2s forwards;
+}
+
+.boxskills:nth-child(1).visible {
+    animation: slideUp 0.6s ease-out 0s forwards;
+}
+
+.boxskills:nth-child(2).visible {
+    animation: slideUp 0.6s ease-out 0.05s forwards;
+}
+
+.boxskills:nth-child(3).visible {
+    animation: slideUp 0.6s ease-out 0.1s forwards;
+}
+
+.boxskills:nth-child(4).visible {
+    animation: slideUp 0.6s ease-out 0.15s forwards;
+}
+
+.boxskills:nth-child(5).visible {
+    animation: slideUp 0.6s ease-out 0.2s forwards;
+}
+
+.boxskills:nth-child(6).visible {
+    animation: slideUp 0.6s ease-out 0.25s forwards;
+}
+
+.boxskills:nth-child(7).visible {
+    animation: slideUp 0.6s ease-out 0.3s forwards;
+} 
+    */
+
+
+
+
+
+
+
+
+
+
 
 /*Header*/
 .header {
@@ -95,9 +265,15 @@ li a:hover {
 .landing {
     color: rgba(2, 56, 110, 1);
     background-color: rgba(255, 244, 228, 1);
+}
+
+.landingelement {
+    position: relative;
     padding-left: 10rem;
     padding-bottom: 8rem;
     height: fit-content;
+    max-width: 80rem;
+    margin: auto;
 }
 
 .hello {
@@ -109,6 +285,7 @@ li a:hover {
     font-size: 1.7rem;
     margin-bottom: 4rem;
 }
+
 
 .mywork {
     font-size: 1.5rem;
@@ -136,6 +313,7 @@ li a:hover {
     position: relative;
     color: rgba(255, 244, 228, 1);
     z-index: 1;
+    border-radius: 25px;
 }
 
 .button::after,
@@ -154,6 +332,7 @@ li a:hover {
     height: 100%;
     background-color: rgba(2, 56, 110, 1);
     border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .button::after {
@@ -190,39 +369,48 @@ li a:hover {
     background-color: rgba(2, 56, 110, 1);
     padding: 1rem;
     border-radius: 25px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 1s ease;
 }
 
 #icon-one {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 1s ease;
     top: 17rem;
     left: 50rem;
     transform: scale(1.1) rotate(-7deg);
 }
 
 #icon-two {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 1s ease;
     top: 19rem;
     left: 60rem;
     transform: scale(1.1) rotate(9deg);
 }
 
 #icon-three {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 1s ease;
     top: 27rem;
     left: 53rem;
     transform: scale(1.1) rotate(11deg);
 }
 
 #icon-one:hover {
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 20px 30px -6px black;
+    transition: transform 0.3s ease-in-out, box-shadow 1s ease;
     transform: scale(1.3) rotate(0deg) translateY(-10px);
 }
 
 #icon-two:hover {
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 20px 30px -6px black;
+    transition: transform 0.3s ease-in-out, box-shadow 1s ease;
     transform: scale(1.3) rotate(0deg) translateY(-10px);
 }
 
 #icon-three:hover {
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 20px 30px -6px black;
+    transition: transform 0.3s ease-in-out, box-shadow 1s ease;
     transform: scale(1.3) rotate(0deg) translateY(-10px);
 }
 
@@ -238,21 +426,29 @@ li a:hover {
 .aboutpage {
     background-color: rgba(2, 56, 110, 1);
     color: rgba(255, 244, 228, 1);
+    position: relative;
+}
+
+.aboutelement {
+    max-width: 80rem;
     font-size: 1.5rem;
     padding-left: 10rem;
+    margin-right: 10rem;
     padding-top: 5rem;
-    padding-bottom: 6rem;
+    padding-bottom: 7rem;
+    margin: auto;
 }
 
 .aboutflex {
     display: flex;
-    margin-top: 8rem;
+    margin-top: 4rem;
     width: 70vw;
-    gap: 2rem;
+    gap: 5rem;
 }
 
 .abouttext {
     font-size: 1rem;
+    max-width: 45rem;
 }
 
 .myphoto {
@@ -260,6 +456,12 @@ li a:hover {
     clip-path: circle(39%);
     transform: scale(1.3);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.myphoto:hover {
+    transform: translateY(-5px) scale(1.5);
+    transition: transform 0.3s ease-in-out;
 }
 
 .skills {
@@ -298,29 +500,148 @@ li a:hover {
 
 /*Project Page*/
 
+.projectselement {
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    max-width: 70rem;
+    margin: auto;
+    color: rgba(2, 56, 110, 1);
+    overflow-x: auto;
+}
+
+#viewbutton {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: rgba(2, 56, 110, 1) solid 2px;
+    border-radius: 10px;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: rgba(2, 56, 110, 1);
+    background-color: transparent;
+    transition: color 2s ease, transform 0.3s ease-in-out, box-shadow 1s ease;
+}
+
+#viewbutton:hover {
+    color: rgba(255, 244, 228, 1);
+    transition: color 2s ease, transform 0.3s ease-in-out, box-shadow 1s ease;
+    box-shadow: 0 20px 30px -6px black;
+    transform: translateY(-5px);
+}
+
+#viewbutton::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(2, 56, 110, 1);
+    transition: 1s ease;
+    display: block;
+    z-index: -1;
+}
+
+#viewbutton:hover::before {
+    width: 100%;
+}
+
 #projects {
+    position: relative;
     background-color: rgba(255, 244, 228, 1);
 }
 
 .project {
-    text-align: center;
-    padding-top: 8rem;
-    font-size: 2rem;
     color: rgba(2, 56, 110, 1);
+    font-size: 2rem;
 }
 
+.last {
+    margin-bottom: 5rem;
+}
+
+/*scrool infinite*/
+
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding-top: 7rem;
-    padding-bottom: 4rem;
-    max-width: 15rem;
-    color: rgba(255, 244, 228, 1);
     background-color: rgba(2, 56, 110, 1);
+    padding: 1rem;
+    color: rgba(255, 244, 228, 1);
+    border-radius: 25px;
+    height: auto;
+    width: 15rem;
+    text-align: center;
+    text-align-last: center;
+    cursor: default;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .pic {
-    height: 150px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.title {
+    margin-bottom: 1rem;
+}
+
+.explain {
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    text-align-last: center;
+}
+
+.flexbox {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.flexbox::-webkit-scrollbar {
+    display: none;
+}
+
+.spin {
+    flex: 0 0 5rem;
+    gap: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    justify-content: center;
+    animation: scroll 35s linear infinite;
+}
+
+/*Animate*/
+
+@keyframes scroll {
+    from {
+        translate: 0%;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+
+/*Contact*/
+.contactelement {
+    max-width: 80rem;
+    margin: auto;
+}
+
+.contactpage {
+    color: rgba(255, 244, 228, 1);
+    padding-top: 5rem;
+    padding-left: 10rem;
 }

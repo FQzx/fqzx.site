@@ -985,12 +985,10 @@ li a:hover {
 
     .myphoto {
         height: 150px;
-        width: 100px;
         margin: unset;
         padding: unset;
         margin-right: auto;
         margin-left: 3rem;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         margin-top: 5rem;
     }
 
@@ -1197,7 +1195,6 @@ li a:hover {
 
     .myphoto {
         height: 150px;
-        width: 100px;
         margin: unset;
         padding: unset;
         margin-right: auto;

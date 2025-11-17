@@ -8,7 +8,7 @@
 #wrapper {
     overflow-x: clip;
     font-family: afacad;
-    background-color: rgba(2, 56, 110, 1);
+    background-color: rgba(255, 244, 228, 1);
 }
 
 
@@ -710,11 +710,7 @@ li a:hover {
     padding: 1rem;
 }
 
-@media screen and (max-width: 1200px) {
-    html {
-        font-size: 35px;
-    }
-}
+
 
 @media screen and (max-width: 992px) {
     html {
@@ -722,7 +718,7 @@ li a:hover {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 30em) {
     html {
         font-size: 8px;
     }
@@ -732,17 +728,121 @@ li a:hover {
     }
 
     .header {
-        flex-direction: column;
         padding-top: 2rem;
         padding-bottom: 2rem;
-        width: 40rem;
+        width: 100%;
         margin: auto;
-        border-radius: 50px;
-        background: transparent;
     }
 
     .list a {
         font-size: 10px;
+    }
+
+    .landingelement {
+        padding: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 25rem;
+    }
+
+    .hello {
+        transform: scale(1.1);
+    }
+
+    .subject {
+        transform: scale(1.3);
+    }
+
+    .mywork {
+        margin-top: 20rem;
+        transform: scale(1.3);
+    }
+
+    /*Icons Settings*/
+    .icon {
+        height: 70px;
+    }
+
+    #icon-one {
+        top: 9rem;
+        left: 3rem;
+        transform: scale(0.8);
+        transform: scale(0.6) rotate(-20deg);
+    }
+
+    #icon-one:hover {
+        transform: scale(0.9) rotate(0deg) translateY(-10px);
+    }
+
+    #icon-two {
+        top: 19rem;
+        left: 38rem;
+        transform: scale(0.8);
+        transform: scale(0.6) rotate(20deg);
+    }
+
+    #icon-two:hover {
+        transform: scale(0.9) rotate(0deg) translateY(-10px);
+    }
+
+    #icon-three {
+        top: 30rem;
+        left: 8rem;
+        transform: scale(0.8);
+        transform: scale(0.6) rotate(20deg);
+    }
+
+    #icon-three:hover {
+        transform: scale(0.9) rotate(0deg) translateY(-10px);
+    }
+
+    .button {
+        transform: scale(0.8);
+        margin-left: 1rem;
+    }
+
+
+
+
+    /*About Page*/
+
+    .aboutelement {
+        padding-left: 3rem;
+    }
+
+    .aboutflex {
+        flex-direction: column;
+    }
+
+    /*Oerder Settings*/
+
+    .abouttext {
+        order: 2;
+    }
+
+    .myphoto {
+        transform: scale(0.7);
+        clip-path: unset;
+        order: 1;
+    }
+
+    /*Project Anim*/
+
+    .container {
+        width: 200px;
+        height: 200px;
+    }
+
+    /*Conact Page*/
+
+    .contactpage {
+        padding-left: 3rem;
+    }
+
+    #viewbutton {
+        transform: scale(0.9);
     }
 }
 

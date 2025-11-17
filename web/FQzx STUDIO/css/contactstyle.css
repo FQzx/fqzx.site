@@ -10,7 +10,7 @@ body {
 @keyframes pageFadeIn {
     0% {
         opacity: 0;
-        filter: blur(10px);
+        filter: blur(15px);
         transform: scale(1.01);
     }
 
@@ -22,7 +22,6 @@ body {
 }
 
 /*Anim Scroll*/
-
 #header {
     animation: slideUp 0.6s ease-out forwards;
 }
@@ -30,7 +29,7 @@ body {
 @keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(45px);
     }
 
     to {
@@ -51,7 +50,7 @@ span {
     color: #FFFFFF;
     mix-blend-mode: normal !important;
     text-shadow:
-        1px 1px 5px rgba(0, 0, 0, 0.7);
+        1.5px 1.5px 7.5px rgba(0, 0, 0, 0.7);
 }
 
 html,
@@ -73,7 +72,7 @@ body::-webkit-scrollbar {
 }
 
 #all {
-    width: 1250px;
+    width: 1875px;
     max-width: 100%;
     min-height: 100vh;
     height: auto;
@@ -124,7 +123,7 @@ p {
     height: 100%;
     overflow: hidden;
     z-index: -1;
-    filter: blur(90px);
+    filter: blur(135px);
     mix-blend-mode: screen;
 }
 
@@ -242,7 +241,7 @@ p {
 
 #fqzx {
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     font-family: ModernBold;
 }
 
@@ -254,45 +253,45 @@ p {
 }
 
 #brandlogo {
-    height: 30px;
+    height: 45px;
     background-color: rgb(255, 255, 255);
     border-radius: 25px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 /*STICKY*/
 
 #header {
-    border: 1px solid white;
+    border: 1.5px solid white;
     position: sticky !important;
-    top: 20px !important;
+    top: 30px !important;
     left: 0 !important;
     right: 0 !important;
-    width: 600px;
+    width: 900px;
     margin: 0 auto !important;
     z-index: 9999 !important;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    border-radius: 75px;
+    padding-top: 4.5px;
+    padding-bottom: 4.5px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
 }
 
 #brand {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 #header ul {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     list-style: none;
     justify-content: center;
-    padding-right: 10px;
+    padding-right: 15px;
 }
 
 #list li a {
@@ -339,23 +338,23 @@ a {
 
 #titlecompetence {
     color: white;
-    padding-left: 128px;
-    padding-top: 160px;
+    padding-left: 192px;
+    padding-top: 240px;
 }
 
 #main {
-    border: 1px solid white;
+    border: 1.5px solid white;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 25px;
-    padding: 25px;
-    margin-top: 120px;
+    border-radius: 37.5px;
+    padding: 37.5px;
+    margin-top: 180px;
     width: fit-content;
-    margin-left: 128px;
-    margin-right: 128px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-left: 192px;
+    margin-right: 192px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
 }
 
 #competence {
@@ -382,47 +381,47 @@ a {
 
 
 #point {
-    width: 600px;
-    border-radius: 50px;
+    width: 900px;
+    border-radius: 75px;
     width: fit-content;
-    padding: 10px;
+    padding: 15px;
+    font-size: 18px;
     text-align: center;
-    font-size: 12px;
 }
 
 .box {
-    backdrop-filter: blur(10px);
-    border: 1px solid white;
-    margin-left: 5px;
-    height: 30px;
-    padding: 5px;
+    backdrop-filter: blur(15px);
+    border: 1.5px solid white;
+    margin-left: 7.5px;
+    height: 45px;
+    padding: 7.5px;
     display: flex;
-    border-radius: 50px;
+    border-radius: 75px;
     align-items: center;
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
 }
 
 /*Photo Settings*/
 
 #faiz {
-    height: 200px;
-    border-radius: 25px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    height: 300px;
+    border-radius: 37.5px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
 }
 
 #github {
-    height: 40px;
+    height: 60px;
 }
 
 #ig {
-    height: 25px;
-    padding-left: 5px;
+    height: 37.5px;
+    padding-left: 7.5px;
 }
 
 #email {
-    height: 25px;
-    padding-left: 5px;
+    height: 37.5px;
+    padding-left: 7.5px;
 }
 
 
@@ -431,9 +430,9 @@ a {
 #copyright {
     color: white;
     text-align: center;
-    margin-bottom: 1%;
-    margin-top: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 1.5%;
+    margin-top: 120px;
+    margin-bottom: 60px;
 }
 
 @media screen and (max-width: 1150px) {

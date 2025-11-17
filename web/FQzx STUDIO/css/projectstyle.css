@@ -10,7 +10,7 @@ body {
 @keyframes pageFadeIn {
     0% {
         opacity: 0;
-        filter: blur(10px);
+        filter: blur(15px);
         transform: scale(1.01);
     }
 
@@ -22,10 +22,9 @@ body {
 }
 
 /*Anim Scroll*/
-
 .scroll-reveal {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(45px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
@@ -38,7 +37,7 @@ body {
 @keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(45px);
     }
 
     to {
@@ -63,7 +62,7 @@ body {
 
 .box {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(45px);
 }
 
 /* Staggered delays for scroll animations */
@@ -103,7 +102,7 @@ span {
     color: #FFFFFF;
     mix-blend-mode: normal !important;
     text-shadow:
-        1px 1px 5px rgba(0, 0, 0, 0.7);
+        1.5px 1.5px 7.5px rgba(0, 0, 0, 0.7);
 }
 
 html,
@@ -125,7 +124,7 @@ body::-webkit-scrollbar {
 }
 
 #all {
-    width: 1250px;
+    width: 1875px;
     max-width: 100%;
     min-height: 100vh;
     height: auto;
@@ -176,7 +175,7 @@ p {
     height: 100%;
     overflow: hidden;
     z-index: -1;
-    filter: blur(90px);
+    filter: blur(135px);
     mix-blend-mode: screen;
 }
 
@@ -295,7 +294,7 @@ p {
 
 #fqzx {
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     font-family: ModernBold;
 }
 
@@ -307,46 +306,46 @@ p {
 }
 
 #brandlogo {
-    height: 30px;
+    height: 45px;
     background-color: rgb(255, 255, 255);
-    border-radius: 25px;
-    margin-left: 10px;
+    border-radius: 37.5px;
+    margin-left: 15px;
 }
 
 /*STICKY*/
 
 #header {
     position: sticky !important;
-    top: 20px !important;
+    top: 30px !important;
     left: 0 !important;
     right: 0 !important;
-    width: 600px;
+    width: 900px;
     margin: 0 auto !important;
     z-index: 9999 !important;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-    border: 1px solid white;
-    backdrop-filter: blur(10px);
+    border-radius: 75px;
+    padding-top: 4.5px;
+    padding-bottom: 4.5px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    border: 1.5px solid white;
+    backdrop-filter: blur(15px);
 }
 
 #brand {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 #header ul {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     list-style: none;
     justify-content: center;
-    padding-right: 10px;
+    padding-right: 15px;
 }
 
 #list li a {
@@ -371,10 +370,10 @@ a {
 /*Main*/
 
 #main {
-    margin-left: 128px;
-    margin-top: 160px;
-    margin-right: 128px;
-    margin-bottom: 80px;
+    margin-left: 192px;
+    margin-top: 240px;
+    margin-right: 192px;
+    margin-bottom: 120px;
 }
 
 #opening {
@@ -389,29 +388,27 @@ a {
 }
 
 
-
-
 /*Porto*/
 
 .porto {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .box {
-    border: 1px solid white;
+    border: 1.5px solid white;
     align-items: center;
-    margin-left: 64px;
-    margin-right: 38px;
+    margin-left: 96px;
+    margin-right: 57px;
     margin: auto;
-    gap: 20px;
+    gap: 30px;
     display: flex;
-    border-radius: 25px;
-    padding: 25px;
+    border-radius: 37.5px;
+    padding: 37.5px;
     width: fit-content;
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
 }
 
 .content {
@@ -421,28 +418,28 @@ a {
 
 .name {
     text-align: center;
-    width: 500px;
+    width: 750px;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     font-family: ModernBold;
 }
 
 .portoexp {
     text-align: center;
-    width: 500px;
+    width: 750px;
     flex-shrink: 1;
 }
 
 .studycase {
     color: white;
-    font-size: 15px;
+    font-size: 22.5px;
     font-family: ModernBold;
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    border-radius: 25px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 37.5px;
     transition: color 0.5s ease;
-    border: 1px solid white;
+    border: 1.5px solid white;
 }
 
 .studycase {
@@ -456,47 +453,47 @@ a {
 /*Photo Settings*/
 
 #photo {
-    height: 200px;
-    border-radius: 25px;
+    height: 300px;
+    border-radius: 37.5px;
 }
 
 #photojegleg {
-    height: 500px;
-    border-radius: 25px;
+    height: 750px;
+    border-radius: 37.5px;
 }
 
 #photowsp {
-    height: 240px;
-    border-radius: 25px;
+    height: 360px;
+    border-radius: 37.5px;
 }
 
 #photoig {
-    height: 630px;
-    border-radius: 25px;
+    height: 945px;
+    border-radius: 37.5px;
 }
 
 #sosmed {
-    padding: 10px;
-    gap: 5px;
-    border-radius: 50px;
+    padding: 15px;
+    gap: 7.5px;
+    border-radius: 75px;
     align-items: center;
     display: flex;
     width: fit-content;
-    height: 40px;
+    height: 60px;
     margin: auto;
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
 }
 
 #view {
     color: white;
     text-align: center;
-    font-size: 13px;
+    font-size: 19.5px;
     transition: color 0.5s ease;
 }
 
 #instagram {
-    height: 50px;
+    height: 75px;
 }
 
 #view:hover {
@@ -507,9 +504,9 @@ a {
 #copyright {
     color: white;
     text-align: center;
-    margin-bottom: 1%;
-    margin-top: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 1.5%;
+    margin-top: 120px;
+    margin-bottom: 60px;
 }
 
 @media screen and (max-width: 992px) {

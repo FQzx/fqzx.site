@@ -1,8 +1,4 @@
 /*Costumization*/
-html {
-    scroll-behavior: smooth;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -605,7 +601,7 @@ li a:hover {
     margin-bottom: 2rem;
     overflow-x: auto;
     mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
 }
 
 .flexbox::-webkit-scrollbar {
@@ -635,6 +631,11 @@ li a:hover {
 
 
 /*Contact*/
+
+#contact {
+    scroll-margin: 8rem;
+}
+
 .contactelement {
     max-width: 80rem;
     margin: auto;
@@ -644,4 +645,109 @@ li a:hover {
     color: rgba(255, 244, 228, 1);
     padding-top: 5rem;
     padding-left: 10rem;
+    padding-bottom: 5rem;
+}
+
+.contactinfo {
+    padding-top: 10rem;
+    width: 20rem;
+}
+
+.info {
+    font-size: large;
+}
+
+.icons {
+    margin-top: 1rem;
+}
+
+.icon1 {
+    height: 40px;
+    transform: translateY(0px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon1:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon2 {
+    padding: 0.4rem;
+    height: 40px;
+    margin-left: 0.6rem;
+    transform: translateY(0px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon2:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon3 {
+    padding: 0.2rem;
+    height: 40px;
+    margin-left: 1rem;
+    transform: translateY(0px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon3:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.copyright {
+    margin: auto;
+    text-align: center;
+    color: rgba(255, 244, 228, 1);
+    background-color: rgba(0, 20, 40, 1);
+    width: 100%;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 8px;
+    }
+
+    .fqzxlogo {
+        height: 30px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 40rem;
+        margin: auto;
+        border-radius: 50px;
+        background: transparent;
+    }
+
+    .list a {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 366px) {
+    html {
+        font-size: 5px;
+    }
 }

@@ -268,16 +268,13 @@ li a:hover {
 
 .landingelement {
     position: relative;
-    min-height: calc(100vh - 80px);
-    
+    min-height: calc(100vh - 10px);
     padding-left: clamp(2rem, 5vw, 8rem); 
     padding-right: clamp(2rem, 5vw, 8rem);
     padding-bottom: 8rem; 
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     height: fit-content;
     max-width: clamp(350px, 90vw, 80rem);
     margin: auto;
@@ -432,13 +429,17 @@ li a:hover {
 /*About Page*/
 
 #about {
-    scroll-margin: 8.8rem;
+    scroll-margin: 15rem;
 }
 
 .aboutpage {
     background-color: rgba(2, 56, 110, 1);
     color: rgba(255, 244, 228, 1);
     position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutelement {
@@ -446,8 +447,6 @@ li a:hover {
     font-size: 1.5rem;
     padding-left: clamp(2rem, 5vw, 8rem);
     padding-right: clamp(2rem, 5vw, 8rem);
-    padding-top: 5rem;
-    padding-bottom: 7rem;
     margin: auto;
 }
 
@@ -518,6 +517,11 @@ li a:hover {
     margin: auto;
     color: rgba(2, 56, 110, 1);
     overflow-x: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #viewbutton {
@@ -662,6 +666,10 @@ li a:hover {
     padding-right: clamp(2rem, 5vw, 8rem);
     padding-bottom: 5rem;
     background-color: rgba(2, 56, 110, 1);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contactinfo {

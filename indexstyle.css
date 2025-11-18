@@ -34,7 +34,7 @@ a {
 }
 
 html {
-    font-size: 150%;
+    font-size: clamp(100%, 0.8rem + 0.8vw, 150%);
 }
 
 html,

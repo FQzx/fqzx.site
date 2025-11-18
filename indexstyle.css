@@ -908,8 +908,9 @@ li a:hover {
 
     /*Icons Settings*/
     .icon {
-        height: 70px;
-        padding: 2rem;
+        height: 90px;
+        padding: 2.5rem;
+        border-radius: 50px;
     }
 
     #icon-one {
@@ -924,7 +925,7 @@ li a:hover {
     }
 
     #icon-two {
-        top: 19rem;
+        top: 16rem;
         left: 13rem;
         transform: scale(0.8);
         transform: scale(0.6) rotate(20deg);
@@ -984,7 +985,7 @@ li a:hover {
     }
 
     .myphoto {
-        height: 150px;
+        height: 100px;
         margin: unset;
         padding: unset;
         margin-right: auto;
@@ -1039,10 +1040,12 @@ li a:hover {
 
     #contacts {
         order: 1;
+        transform: scale(0.9);
     }
 
     .form-container {
         margin-bottom: unset;
+        margin-right: 3rem;
     }
 
     .form-subtitle {
@@ -1118,8 +1121,9 @@ li a:hover {
 
     /*Icons Settings*/
     .icon {
-        height: 70px;
-        padding: 2rem;
+        height: 90px;
+        padding: 2.5rem;
+        border-radius: 50px;
     }
 
     #icon-one {
@@ -1134,7 +1138,7 @@ li a:hover {
     }
 
     #icon-two {
-        top: 19rem;
+        top: 16rem;
         left: 13rem;
         transform: scale(0.8);
         transform: scale(0.6) rotate(20deg);
@@ -1194,7 +1198,7 @@ li a:hover {
     }
 
     .myphoto {
-        height: 150px;
+        height: 100px;
         margin: unset;
         padding: unset;
         margin-right: auto;
@@ -1249,10 +1253,12 @@ li a:hover {
 
     #contacts {
         order: 1;
+        transform: scale(0.9);
     }
 
     .form-container {
         margin-bottom: unset;
+        margin-right: 3rem;
     }
 
     .form-subtitle {

@@ -4,7 +4,7 @@ const MOBILE_BREAKPOINT = 480;
 document.addEventListener('DOMContentLoaded', loopAnimation);
 
 function initSmoothScroll() {
-    // Remove mobile check to enable smooth scroll on all devices
+
     if (typeof Lenis === 'undefined') {
         return;
     }
@@ -19,18 +19,17 @@ function initSmoothScroll() {
         smoothTouch: true,
         touchMultiplier: 1.5,
         infinite: false,
-        lerp: 0.15 // Reduced from 0.1 for better performance
+        lerp: 0.15 
     });
 
     function raf(time) {
         globalLenis.raf(time);
-        // fade elements before they reach the header
+     
         fadeBeforeHeader();
         requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
 
-    // fallback: if Lenis isn't active, still run fade checks on scroll
     window.addEventListener('scroll', () => {
         if (!globalLenis) fadeBeforeHeader();
     }, { passive: true });
@@ -77,9 +76,9 @@ function startDriftCheck() {
                 }
             })
             .catch(error => {
-                // Silent fail
+               
             });
-    }, 800); // Increased interval from 500 to 800ms for less CPU usage
+    }, 800); 
 }
 
 function initializePlayers() {
@@ -225,12 +224,12 @@ const FINAL_TEXT = "Halo, Saya Faiz";
 
 const CHARACTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
-const FRAME_DURATION = 20; // Increased from 15 for less CPU
-const SHUFFLE_STEPS = 8; // Reduced from 10
+const FRAME_DURATION = 20; 
+const SHUFFLE_STEPS = 8; 
 
 const PAUSE_DURATION = 1500;
 const FADE_OUT_DURATION = 300;
-const FADE_OUT_STEPS = 8; // Reduced from 10
+const FADE_OUT_STEPS = 8; 
 
 function randomChar() {
     return CHARACTERS[Math.floor(Math.random() * CHARACTERS.length)];
@@ -277,7 +276,7 @@ function startScramble(callback) {
 
         if (charactersCompleted !== queue.length) {
             frame++;
-            requestAnimationFrame(update); // Changed from setTimeout to requestAnimationFrame
+            requestAnimationFrame(update); 
         } else {
             TARGET_ELEMENT.style.opacity = '1';
             TARGET_ELEMENT.textContent = FINAL_TEXT;
@@ -334,7 +333,7 @@ function loopAnimation() {
     });
 }
 
-// Fade elements before they go under the header
+
 function fadeBeforeHeader() {
     try {
         const header = document.getElementById('header');
@@ -342,15 +341,14 @@ function fadeBeforeHeader() {
         const els = document.querySelectorAll('.scroll-reveal');
 
         els.forEach(el => {
-            // skip header itself and anything inside the header
-            // also skip elements explicitly marked not to fade (data-no-fade) and the email box
+        
             if (!el) return;
             if (el.id === 'header' || el.closest('#header')) return;
             if (el.id === 'contact' || el.closest('#contact')) return;
             if (el.hasAttribute && el.hasAttribute('data-no-fade')) return;
 
             const rect = el.getBoundingClientRect();
-            // when element top is at or above header bottom + small offset, fade it
+            
             if (rect.top <= headerH + 8) {
                 el.classList.add('fade-under');
             } else {
@@ -358,6 +356,6 @@ function fadeBeforeHeader() {
             }
         });
     } catch (e) {
-        // ignore errors during early load
+     
     }
 }

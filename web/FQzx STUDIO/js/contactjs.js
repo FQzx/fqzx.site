@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initSmoothScroll() {
-    // Initialize Lenis on all devices so scroll feels consistent everywhere
+
     if (typeof Lenis === 'undefined') {
         return;
     }

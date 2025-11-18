@@ -4,12 +4,10 @@ const MOBILE_BREAKPOINT = 480;
 document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initMobileScrollAnimations();
-    // Also initialize scroll animations for all viewports (so landing elements animate even without mobile check)
     initScrollAnimations();
 });
 
 function initSmoothScroll() {
-    // Initialize Lenis on all devices so pages use consistent smooth scrolling
     if (typeof Lenis === 'undefined') {
         return;
     }
@@ -21,10 +19,10 @@ function initSmoothScroll() {
         gestureDirection: 'vertical',
         smooth: true,
         mouseMultiplier: 0.4,
-        smoothTouch: true, // enable smooth touch for mobile
+        smoothTouch: true,
         touchMultiplier: 2,
         infinite: false,
-        lerp: 0.1 // smoother interpolation
+        lerp: 0.1 
     });
 
     function raf(time) {

@@ -139,26 +139,10 @@ body::-webkit-scrollbar {
     will-change: opacity, transform;
 }
 
-#icon-one {
-    animation: fadeIn 1s ease-out forwards;
-    animation: slideUp 0.6s ease-out forwards;
-}
-
-#icon-two {
-    animation: fadeIn 4s ease-out forwards;
-    animation: slideUp 1.5s ease-out forwards;
-}
-
-#icon-three {
-    animation: fadeIn 8s ease-out forwards;
-    animation: slideUp 2s ease-out forwards;
-}
-
 .subject {
     animation: fadeIn 0.6s ease-out forwards;
     animation: slideUp 2s ease-out forwards;
 }
-
 
 .fade-in {
     animation: fadeIn 0.6s ease-out forwards;
@@ -293,6 +277,7 @@ body::-webkit-scrollbar {
         width: 20rem;
         height: fit-content;
         font-size: 3rem;
+        border-radius: 10px;
     }
 
     .menu li {
@@ -533,7 +518,7 @@ li a:hover {
     scroll-margin: 15rem;
 }
 
-.aboutpage {
+#aboutpage {
     background-color: rgba(2, 56, 110, 1);
     color: rgba(255, 244, 228, 1);
     position: relative;
@@ -760,7 +745,7 @@ li a:hover {
     margin: auto;
 }
 
-.contactpage {
+#contactpage {
     color: rgba(255, 244, 228, 1);
     padding-top: 5rem;
     padding-left: clamp(2rem, 5vw, 8rem);
@@ -1085,7 +1070,7 @@ li a:hover {
     }
 
     /*Conact Page*/
-    .contactpage {
+    #contactpage {
         padding: unset;
         text-align: center;
         padding-top: 10rem;
@@ -1297,8 +1282,12 @@ li a:hover {
         font-size: 10px;
     }
 
+    .boxskills {
+        padding: 0.4rem;
+    }
+
     /*Conact Page*/
-    .contactpage {
+    #contactpage {
         padding: unset;
         text-align: center;
         padding-top: 10rem;
@@ -1376,11 +1365,7 @@ li a:hover {
     }
 
     .list a {
-        font-size: 13px;
-    }
-
-    .icon {
-        display: none;
+        font-size: 15px;
     }
 
     .landingelement {
@@ -1413,6 +1398,10 @@ li a:hover {
         height: 90px;
         padding: 2.5rem;
         border-radius: 50px;
+    }
+
+    .icon {
+        display: none;
     }
 
     #icon-one {
@@ -1457,8 +1446,11 @@ li a:hover {
 
 
     /*About Page*/
+    #about {
+        scroll-margin: 25rem;
+    }
+
     .aboutelement {
-        height: 100vh;
         padding-left: 3rem;
         align-items: center;
         justify-content: center;
@@ -1498,7 +1490,6 @@ li a:hover {
 
 
     /*Project Anim*/
-
     .container {
         width: 200px;
         height: 200px;
@@ -1508,8 +1499,12 @@ li a:hover {
         font-size: 10px;
     }
 
+    .boxskills {
+        padding: 0.4rem;
+    }
+
     /*Conact Page*/
-    .contactpage {
+    #contactpage {
         padding: unset;
         text-align: center;
         padding-top: 10rem;
@@ -1533,7 +1528,7 @@ li a:hover {
         text-align: center;
         padding: unset;
         margin: unset;
-        margin-bottom: 5rem;
+        margin-bottom: 7rem;
         width: 300px;
     }
 

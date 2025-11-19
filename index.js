@@ -34,7 +34,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 document.addEventListener('DOMContentLoaded', () => {
-  const animatedElements = document.querySelectorAll('.fade-in, .slide-up, .scale-in, .container, .boxskills, .landingelement h1, .aboutelement h3, .aboutflex, .flexbox');
+  const animatedElements = document.querySelectorAll('.fade-in, .slide-up, .scale-in, .container, .boxskills, .landingelement h1, .aboutelement h3, #contacts, .aboutflex, .flexbox');
   animatedElements.forEach(el => {
     observer.observe(el);
   });

@@ -144,6 +144,11 @@ body::-webkit-scrollbar {
     animation: slideUp 2s ease-out forwards;
 }
 
+.form-container {
+    animation: fadeIn 0.6s ease-out forwards;
+    animation: slideUp 2s ease-out forwards;
+}
+
 .fade-in {
     animation: fadeIn 0.6s ease-out forwards;
 }
@@ -250,6 +255,7 @@ body::-webkit-scrollbar {
 .navmenu {
     display: none;
     color: rgba(255, 244, 228, 1);
+    cursor: default;
 }
 
 @media screen and (max-width: 70.667em) {
@@ -289,7 +295,7 @@ body::-webkit-scrollbar {
 .menu li {
     list-style: none;
     flex-direction: row;
-    float: right;
+    float: left;
 }
 
 .header {

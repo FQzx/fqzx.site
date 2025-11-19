@@ -11,9 +11,10 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
 
-
 <body>
     <div id="wrapper">
+
+            <div id="loader"></div>
 
         <div class="header">
             <div class="brand">
@@ -22,13 +23,16 @@
                     <h1 class="fqzx"><span class="up"> FQzx STUDIO</span></h1>
                 </a>
             </div>
-            <div class="list">
-                <lu>
-                    <li><a href="#wrapper"><span class="up"> Home</span></a></li>
-                    <li><a href="#about"><span class="up"> About</span></a></li>
-                    <li><a href="#projects"><span class="up"> Projects</span></a></li>
-                    <li><a href="#contact"><span class="up"> Contact</span></a></li>
-                </lu>
+            <div class="flexnav">
+                <div class="navmenu">☰</div>
+                <div class="list">
+                    <ul class="menu">
+                        <li><a href="#wrapper"><span class="up"> Home</span></a></li>
+                        <li><a href="#about"><span class="up"> About</span></a></li>
+                        <li><a href="#projects"><span class="up"> Projects</span></a></li>
+                        <li><a href="#contact"><span class="up"> Contact</span></a></li>
+                        </lu>
+                </div>
             </div>
         </div>
 
@@ -252,10 +256,6 @@
                         </section>
                     </div>
                     <script src="index.js"></script>
-
-                    <script>
-                        document.getElementById('viewbutton').innerHTML = '<h3>View All Projects</h3>';
-                    </script>
                 </div>
             </div>
             <div class="copyright"><b>&copy;2025 Faiz Wahyu Setiawan. Semua Hak Cipta Dilindungi Undang-Undang.</b>

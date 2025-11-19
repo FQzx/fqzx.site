@@ -269,9 +269,9 @@ li a:hover {
 .landingelement {
     position: relative;
     min-height: calc(100vh - 10px);
-    padding-left: clamp(2rem, 5vw, 8rem); 
+    padding-left: clamp(2rem, 5vw, 8rem);
     padding-right: clamp(2rem, 5vw, 8rem);
-    padding-bottom: 8rem; 
+    padding-bottom: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,8 +281,8 @@ li a:hover {
 }
 
 .landing-content {
-    width: 100%; 
-    position: relative; 
+    width: 100%;
+    position: relative;
 }
 
 .hello {
@@ -827,49 +827,219 @@ li a:hover {
 
 /*Ipad*/
 
-@media screen and (max-width: 42.667em) {
+@media screen and (max-width: 70.667em) {
+    html {
+        font-size: 10px;
+    }
 
+    .icongroup {
+        position: relative;
+        position: absolute;
+        flex: none;
+    }
 
-    /*Landing*/
+    .fqzxlogo {
+        height: 30px;
+    }
+
+    .header {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 100%;
+        margin: auto;
+    }
+
+    .fqzx {
+        font-size: 20px;
+    }
+
+    .list a {
+        font-size: 15px;
+    }
+
     .landingelement {
-        padding-left: 3rem;
+        padding: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hello {
+        transform: scale(1.1);
+    }
+
+    .subject {
+        transform: scale(1.3);
+    }
+
+    .mywork {
+        margin-top: 20rem;
+        transform: scale(1.3);
+    }
+
+    #viewbutton {
+        transform: scale(0.9);
+    }
+
+    /*Icons Settings*/
+    .icon {
+        height: 90px;
+        padding: 2.5rem;
+        border-radius: 50px;
+    }
+
+    .icon {
+        display: none;
     }
 
     #icon-one {
-        left: 43rem;
+        top: 9rem;
+        left: -25rem;
+        transform: scale(0.8);
+        transform: scale(0.6) rotate(-20deg);
+    }
+
+    #icon-one:hover {
+        transform: scale(0.9) rotate(0deg) translateY(-10px);
     }
 
     #icon-two {
-        left: 53rem;
+        top: 16rem;
+        left: 13rem;
+        transform: scale(0.8);
+        transform: scale(0.6) rotate(20deg);
+    }
+
+    #icon-two:hover {
+        transform: scale(0.9) rotate(0deg) translateY(-10px);
     }
 
     #icon-three {
-        left: 46rem;
+        top: 30rem;
+        left: -20rem;
+        transform: scale(0.8);
+        transform: scale(0.6) rotate(20deg);
     }
 
-    /*About*/
+    #icon-three:hover {
+        transform: scale(0.9) rotate(0deg) translateY(-10px);
+    }
 
+    .button {
+        transform: scale(0.8);
+        margin-left: 1rem;
+    }
+
+
+
+
+    /*About Page*/
     .aboutelement {
         padding-left: 3rem;
+        align-items: center;
+        justify-content: center;
+        margin-right: 3rem;
+    }
+
+    .aboutflex {
+        flex-direction: row;
+    }
+
+    .point {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    /*Order Settings*/
+    #about {
+        padding: unset;
+        font-size: 15px;
+        text-align: center;
     }
 
     .abouttext {
-        flex: 5;
-        width: 900px;
+        font-size: 13px;
+        width: 100rem;
     }
 
-    /*Contact*/
-
-    .contactelement {
-        padding-left: 3rem;
+    .myphoto {
+        height: 100px;
+        margin: unset;
+        padding: unset;
+        margin-right: auto;
+        margin-left: 3rem;
+        margin-top: 5rem;
     }
 
+
+    /*Project Anim*/
+
+    #projects {
+        scroll-margin: 30rem;
+    }
+
+    .container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .explain {
+        font-size: 10px;
+    }
+
+    /*Conact Page*/
     .contactpage {
-        padding-left: 1rem;
+        padding: unset;
+        text-align: center;
+        padding-top: 10rem;
     }
+
+    .info {
+        font-size: 13px;
+        padding: unset;
+        margin: unset;
+    }
+
+    .contactflex {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .contactinfo {
+        text-align: center;
+        padding: unset;
+        margin: unset;
+        margin-bottom: 7rem;
+        width: 300px;
+    }
+
+    #contacts {
+        transform: scale(0.9);
+    }
+
+    .form-container {
+        margin-bottom: unset;
+        margin-right: 3rem;
+    }
+
+    .form-subtitle {
+        font-size: 13px;
+    }
+
+    .icon2 {
+        padding: 0.7rem;
+    }
+
+    .icon3 {
+        padding: 0.4rem;
+    }
+
 }
 
-/*Mobile*/
+/*Mo]bile*/
 
 @media screen and (max-width: 30em) {
     html {
@@ -1300,4 +1470,3 @@ li a:hover {
     }
 
 }
-

@@ -40,23 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
-//Nav Bar
-const navbar = document.querySelector('.navmenu');
-const menulink = document.querySelector('.menu');
-const menulist = document.querySelectorAll('.menu a');
-
-navbar.addEventListener('click', () => {
-  menulink.classList.toggle('active');
-});
-
-menulink.forEach(link => {
-  link.addEventListener('click', () => {
-    menulist.classList.remove('active');
-  });
-});
-
-
 //Load Page (NF)
 
 window.addEventListener('load', function () {
@@ -66,5 +49,35 @@ window.addEventListener('load', function () {
 
   loader.addEventListener('transitionend', function () {
     loader.remove();
+  });
+});
+
+//Navbar
+
+const navbar = document.querySelector('.navmenu');
+const linkmenu = document.querySelector('.menu');
+const listmenu = document.querySelectorAll('.menu a');
+
+let timeoutId;
+
+navbar.addEventListener('click', () => {
+  clearTimeout(timeoutId);
+  linkmenu.classList.toggle('active');
+});
+
+linkmenu.addEventListener('mouseleave', () => {
+  timeoutId = setTimeout(() => {
+    linkmenu.classList.remove('active');
+  }, 500);
+});
+
+linkmenu.addEventListener('mouseenter', () => {
+  clearTimeout(timeoutId);
+})
+
+listmenu.forEach(link => {
+  link.addEventListener('click', () => {
+    clearTimeout(timeoutId);
+    linkmenu.classList.remove('active');
   });
 });

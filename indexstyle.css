@@ -35,6 +35,7 @@ a {
 
 html {
     font-size: clamp(16px, 1rem + 0.4vw, 20px);
+    cursor: default;
 }
 
 html,
@@ -356,11 +357,12 @@ li a:hover {
 .landing {
     color: rgba(2, 56, 110, 1);
     background-color: rgba(255, 244, 228, 1);
+    margin-top: 2rem;
 }
 
 .landingelement {
     position: relative;
-    min-height: calc(100vh - 10px);
+    min-height: calc(100vh - 20px);
     padding-left: clamp(2rem, 5vw, 8rem);
     padding-right: clamp(2rem, 5vw, 8rem);
     padding-bottom: 8rem;
@@ -705,7 +707,7 @@ li a:hover {
     padding-top: 1rem;
     padding-bottom: 3rem;
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -1132,6 +1134,10 @@ li a:hover {
         font-size: 8px;
     }
 
+    .main {
+        margin: unset;
+    }
+
     .icongroup {
         position: relative;
         position: absolute;
@@ -1279,6 +1285,15 @@ li a:hover {
 
 
     /*Project Anim*/
+    
+    .flexbox {
+        width: 90%;
+    }
+
+    .flexbox {
+        width: 90%;
+    }
+
     .container {
         width: 200px;
         height: 200px;

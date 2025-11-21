@@ -293,6 +293,7 @@ body {
 }
 
 .contactbutton {
+    display: none;
     background-color: rgba(2, 56, 110, 1);
     color: rgba(255, 244, 228, 1);
     padding: 1rem;
@@ -319,7 +320,6 @@ body {
 
 
 
-
 /*Mobile Nav*/
 
 .flexnav {
@@ -331,6 +331,7 @@ body {
     display: none;
     color: rgba(255, 244, 228, 1);
     cursor: default;
+    transition: color 0.3s;
 }
 
 @media screen and (max-width: 70.667em) {
@@ -1216,6 +1217,10 @@ li a:hover {
 @media screen and (max-width: 30em) {
     html {
         font-size: 8px;
+    }
+
+    .contactbutton {
+        display: flex;
     }
 
     .main {

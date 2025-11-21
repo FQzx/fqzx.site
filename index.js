@@ -78,6 +78,15 @@ const navbar = document.querySelector('.navmenu');
 const linkmenu = document.querySelector('.menu');
 const listmenu = document.querySelectorAll('.menu a');
 
+navbar.addEventListener('mouseenter', () => {
+  navbar.style.color = 'grey';
+
+});
+
+navbar.addEventListener('mouseleave', () => {
+  navbar.style.color = 'rgba(255, 244, 228, 1)';
+});
+
 let timeoutId;
 
 navbar.addEventListener('click', () => {

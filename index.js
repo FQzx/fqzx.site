@@ -3,6 +3,7 @@ const viewbutton = document.querySelector('#viewbutton');
 
 viewbutton.innerHTML = '<h3>View All Projects</h3>';
 
+
 //lenis 
 const lenis = new Lenis()
 
@@ -12,6 +13,7 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+
 
 //SLink Fix
 document.querySelectorAll('a[href^="#"]').forEach(link => {
@@ -43,8 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-//Load Page (NF)
 
+//Load Page
 window.addEventListener('load', function () {
   const loader = document.getElementById('loader');
 
@@ -60,20 +62,21 @@ loader.style.display = 'flex';
 loader.style.flexDirection = 'column';
 loader.style.order = '2';
 
-//Button
 
+//Button
 const conbutt = document.querySelector('.contactbutton');
 
 conbutt.innerHTML = '<h1>Contact Me</h1>';
 conbutt.style.position = 'fixed';
 
+
 //Contact Scroll To
 conbutt.addEventListener('click', () => {
-  document.querySelector('#contactpage').scrollIntoView({behavior: 'smooth'});
+  document.querySelector('#contactpage').scrollIntoView({ behavior: 'smooth' });
 });
 
-//Navbar
 
+//Navbar
 const navbar = document.querySelector('.navmenu');
 const linkmenu = document.querySelector('.menu');
 const listmenu = document.querySelectorAll('.menu a');
@@ -110,5 +113,40 @@ listmenu.forEach(link => {
     linkmenu.classList.remove('active');
   });
 });
+
+
+//Name
+const photo = document.querySelector('.myphoto');
+const faiz = document.querySelector('.faiz');
+
+faiz.innerHTML = '<h3>Faiz Wahyu Setiawan</h3>';
+
+photo.addEventListener('click', () => {
+  faiz.classList.add('active');
+});
+
+photo.addEventListener('mouseenter', () => {
+  faiz.classList.add('active');
+});
+
+photo.addEventListener('mouseleave', () => {
+  faiz.classList.remove('active');
+});
+
+const flex = document.querySelector('.flexphoto');
+
+
+//boxskills Anim (NF)
+const box = document.querySelector('.boxskills');
+const boxparent = document.querySelector('.box');
+
+
+//titlepro
+const title = document.querySelector('.title');
+
+title.addEventListener('mouseenter', () => {
+  title.style.color = 'black';
+});
+
 
 //End

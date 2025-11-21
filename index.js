@@ -1,4 +1,7 @@
-document.getElementById('viewbutton').innerHTML = '<h3>View All Projects</h3>';
+//H3
+const viewbutton = document.querySelector('#viewbutton'); 
+
+viewbutton.innerHTML = '<h3>View All Projects</h3>';
 
 //lenis 
 const lenis = new Lenis()
@@ -81,3 +84,4 @@ listmenu.forEach(link => {
     linkmenu.classList.remove('active');
   });
 });
+

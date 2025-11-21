@@ -1,5 +1,5 @@
 //H3
-const viewbutton = document.querySelector('#viewbutton'); 
+const viewbutton = document.querySelector('#viewbutton');
 
 viewbutton.innerHTML = '<h3>View All Projects</h3>';
 
@@ -60,6 +60,17 @@ loader.style.display = 'flex';
 loader.style.flexDirection = 'column';
 loader.style.order = '2';
 
+//Button
+
+const conbutt = document.querySelector('.contactbutton');
+
+conbutt.innerHTML = '<h1>Contact Me</h1>';
+conbutt.style.position = 'fixed';
+
+//Contact Scroll To
+conbutt.addEventListener('click', () => {
+  document.querySelector('#contactpage').scrollIntoView({behavior: 'smooth'});
+});
 
 //Navbar
 
@@ -70,8 +81,11 @@ const listmenu = document.querySelectorAll('.menu a');
 let timeoutId;
 
 navbar.addEventListener('click', () => {
-  clearTimeout(timeoutId);
   linkmenu.classList.toggle('active');
+});
+
+linkmenu.addEventListener('mouseenter', () => {
+  clearTimeout(timeoutId);
 });
 
 linkmenu.addEventListener('mouseleave', () => {
@@ -80,10 +94,6 @@ linkmenu.addEventListener('mouseleave', () => {
   }, 500);
 });
 
-linkmenu.addEventListener('mouseenter', () => {
-  clearTimeout(timeoutId);
-})
-
 listmenu.forEach(link => {
   link.addEventListener('click', () => {
     clearTimeout(timeoutId);
@@ -91,3 +101,4 @@ listmenu.forEach(link => {
   });
 });
 
+//End

@@ -55,6 +55,12 @@ window.addEventListener('load', function () {
   });
 });
 
+loader.innerHTML = '<h1 class=loadingtext>LOADING</h1>';
+loader.style.display = 'flex';
+loader.style.flexDirection = 'column';
+loader.style.order = '2';
+
+
 //Navbar
 
 const navbar = document.querySelector('.navmenu');

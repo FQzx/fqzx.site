@@ -115,6 +115,7 @@ listmenu.forEach(link => {
 });
 
 
+
 //Name
 const photo = document.querySelector('.myphoto');
 const faiz = document.querySelector('.faiz');
@@ -135,18 +136,41 @@ photo.addEventListener('mouseleave', () => {
 
 const flex = document.querySelector('.flexphoto');
 
-
 //boxskills Anim (NF)
 const box = document.querySelector('.boxskills');
 const boxparent = document.querySelector('.box');
 
 
-//titlepro
+//titlepro (NF)
 const title = document.querySelector('.title');
 
 title.addEventListener('mouseenter', () => {
   title.style.color = 'black';
 });
+
+//Hover Projects
+
+
+const project = document.querySelector('.container');
+
+let timeoutIproject;
+
+project.addEventListener('click', () => {
+    clearTimeout(timeoutIproject);
+    spin.classList.toggle('active');
+});
+
+project.addEventListener('mouseenter', () => {
+    timeoutIproject = settimeout(() => {
+        spin.classList.add('active');
+    }, 500);
+});
+
+project.addEventListener('mouseleave', () => {
+    clearTimeout(timeoutIproject);
+    spin.classList.remove('active');
+});
+
 
 
 //End

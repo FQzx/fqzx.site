@@ -39,7 +39,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 document.addEventListener('DOMContentLoaded', () => {
-  const animatedElements = document.querySelectorAll('.fade-in, .slide-up, .scale-in, .container, .boxskills, .landingelement h1, .aboutelement h3, .form-container, .aboutflex, .flexbox, .contactelement, .contactflex, .contactinfo, #contacts, #contact');
+  const animatedElements = document.querySelectorAll('.fade-in, .slide-up, .scale-in, .container, .boxskills, .landingelement h1, .aboutelement h3, .form-container, .aboutflex, .flexbox, .contactelement, .contactflex, .contactinfo, .collum-wrap, #contacts, #contact');
   animatedElements.forEach(el => {
     observer.observe(el);
   });

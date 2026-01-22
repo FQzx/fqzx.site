@@ -136,20 +136,9 @@ photo.addEventListener('mouseleave', () => {
 
 const flex = document.querySelector('.flexphoto');
 
-//boxskills Anim (NF)
-const box = document.querySelector('.boxskills');
-const boxparent = document.querySelector('.box');
 
-
-//titlepro (NF)
-const title = document.querySelector('.title');
-
-title.addEventListener('mouseenter', () => {
-  title.style.color = 'black';
-});
 
 //Hover Projects
-
 
 const project = document.querySelector('.container');
 
